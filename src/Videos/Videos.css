@@ -1,0 +1,19 @@
+.videos-header{
+    padding: 100px;
+    display: flex;
+
+    position: relative;
+    justify-content: center;
+    color: rgb(231, 255, 203);
+    font-size: 3em;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.videos{
+    padding: 20px;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
+
+}

@@ -1,0 +1,36 @@
+.images{
+    min-height: 100%;
+    max-width: 150%;
+    object-fit: contain;
+    padding: 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-container{
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    position: relative;
+    opacity: 0.8;
+}
+
+.photos{
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.photos-header{
+    padding: 100px;
+    display: flex;
+
+    position: relative;
+    justify-content: center;
+    color: rgb(231, 255, 203);
+    font-size: 3em;
+    font-family: 'MuseoModerno', cursive;
+}

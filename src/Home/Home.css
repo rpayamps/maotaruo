@@ -1,0 +1,190 @@
+/* @media(max-width: 100%){
+    .vid-showcase,.vid-showcase header{
+      padding: 40px;
+    }
+    .text h1{
+      font-size: 3em;
+    }
+    .text h2{
+      font-size: 2em;
+    }
+  } */
+
+  *{
+
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Chivo',sans-serif;
+  }
+  .vid-showcase{
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: rgb(231, 255, 203);
+    z-index:2;
+    transition: 0.5s;
+  }
+  .vid-showcase.active{
+    right: 300px;
+  }
+  .vid-showcase header{
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    padding: 40px 100px;
+    /* z-index: 1000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    background: #7270ff;
+    mix-blend-mode: overlay;
+  }
+  .vid-showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.8;
+  }
+  .text{
+    position: absolute;
+    z-index: 10;
+    left: 2em;
+    top: 10em;
+  }
+  .text h1{
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-family: 'MuseoModerno', cursive;
+  }
+  .text h2{
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-family: 'MuseoModerno', cursive;
+  }
+  .text p{
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+  }
+  .text a{
+    /* display: inline-block; */
+    font-size:1em;
+    background: rgb(183, 202, 160);
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 50px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    font-family: 'MuseoModerno', cursive;
+  }
+  .text a:hover{
+    letter-spacing: 6px;
+    background: black;
+    color:red;
+  }
+  .social{
+    position: absolute;
+    z-index: 1001;
+    left: 0.5em;
+    bottom: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .social li{
+    list-style: none;
+    line-height: 2em;
+  }
+  .social li a{
+    display: inline-block;
+    margin-right: 1em;
+    width: 3.5em;
+    transition: 0.2s;
+    color: rgb(231, 255, 203);
+  }
+  .social li a:hover{
+    transform: scale(0.8) translateY(-15px);
+  }
+  .menu {
+    z-index: 1001;
+    position: absolute;
+    right: 5em;
+    top: 2em;
+    
+  }
+  .menu ul{
+    font-size: 3em;
+  }
+  .menu li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  }
+  .menu a{
+    padding-bottom: 10px;
+    text-decoration: none;
+   
+    color: rgb(183, 202, 160);
+    margin: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    color:rgb(231, 255, 203);
+    font-size: 3 em;
+    font-family: 'MuseoModerno', cursive;
+  }
+  .menu a:hover{
+    letter-spacing: 6px;
+  
+    color:red;
+  }
+  
+  .fa{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    height: 2em;
+    padding: 20px;  
+  }
+
+  .strong{
+      color:red;
+  }
+
+  .home-container{
+    justify-content: center;
+    
+  }
+
+  .contact-me{
+    padding-top: 50px;
+    
+  }
+
+  

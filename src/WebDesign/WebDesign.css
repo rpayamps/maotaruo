@@ -1,0 +1,36 @@
+.web-design-image{
+
+    max-height: 400px;
+    max-width: 100%;
+    object-fit: contain;
+
+}
+
+.web-design{
+    display: flex;
+    padding-top: 75px;
+
+}
+
+.image-1{
+    cursor: pointer;
+    padding: 50px;
+}
+
+
+.image-2{
+    cursor: pointer;
+    padding: 50px;
+}
+
+.web-design-header{
+    padding-top: 100px;
+    display: flex;
+
+    position: relative;
+    justify-content: center;
+    color: rgb(231, 255, 203);
+    font-size: 3em;
+    font-family: 'MuseoModerno', cursive;
+
+}

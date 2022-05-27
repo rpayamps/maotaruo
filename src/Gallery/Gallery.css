@@ -1,0 +1,30 @@
+.gallery{
+    padding-top: 20px;
+}
+
+ .gallery-nav{ 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} 
+
+
+.gallary-link {
+    
+    margin: 1em;
+    font-size:1em;
+    background: rgb(183, 202, 160);
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 50px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.gallary-link:hover{
+    letter-spacing: 6px;
+    background: black;
+    color:red;
+  }
