@@ -1,11 +1,4 @@
-* {
-  margin: 0;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 
 
@@ -38,5 +31,122 @@ code {
   -webkit-transition: opacity .25s ease-in-out;
 }
 
+/* Mobile Phones  */
+@media screen and (min-width: 270px) 
+and (max-width :  750px) 
+{
+  .menu, .camera, .navBar {
+    display: none; 
+  }
+ 
+  .gallery .gallery-nav{
+    display: grid;
+    width:100%;
+    font-size: .5rem;
+    padding: .02%;
+   
+  }
+
+  .videos-header {
+    position: relative;
+    left: 7%;
+  }
+
+  .videos{
+    padding: 20px;
+    display: grid;
+    margin: 20px auto;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: none;
+  }
+
+  .gallery .videos .video {
+    width: 25%
+  }
+  
+}
+
+
+/* Medium Devices, tables etc */
+@media screen and (min-width: 768px)
+and (max-width: 989px)
+ {
+  .menu {
+    display: none; 
+  }
+ 
+  .videos{
+    padding: 20px;
+    display: grid;
+    margin: 20px auto;
+    grid-gap: 20px;
+    grid-template-columns: none;
+    left: 5%;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .gallery-nav{
+    justify-content: center;
+    position: relative;
+    left: 5%;
+  }
+}
+
+/* laptops Desktop */
+@media screen and (min-width: 990px) 
+ and (max-width: 1199px)
+ {
+  .menu {
+    display: flex; 
+  }
+  .burger-bar, .camera{
+    display: none;
+  }
+  .videos{
+    padding: 20px;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
+  
+  }
+ 
+  
+}
+
+/* Large Devices */
+@media screen and (min-width: 1200px)
+and (max-width: 1600px) {
+  .menu, .camera {
+    display: flex; 
+
+  }
+ 
+  .videos{
+    padding: 20px;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
+  
+  }
+  .video{
+    width: 75%;
+    height: 75%;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+ 
 
 

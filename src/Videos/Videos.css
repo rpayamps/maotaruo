@@ -9,11 +9,5 @@
     font-family: 'MuseoModerno', cursive;
 }
 
-.videos{
-    padding: 20px;
-    display: grid;
-    margin: 20px auto;
-    grid-template-columns: 1fr 1fr ;
-    grid-gap: 20px;
 
-}
+

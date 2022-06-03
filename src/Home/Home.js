@@ -1,40 +1,51 @@
-import {React} from "react"
-import Fade from 'react-reveal/Fade';
+import React from "react"
 import './Home.css'
+import Icon from '../Icon'
+import Fade from 'react-reveal/Fade';
 import { FaLink, FaInstagram, FaLinkedinIn} from "react-icons/fa"
 import {AiOutlineMail} from "react-icons/ai"
 import {Link, useNavigate } from "react-router-dom"
-import { GlitchedImage } from 'react-image-glitch'
+import MobileNavgation from "../Navbar/MobileNavigation"
+import classes from "../Navbar/Navbar.module.css"
+
+
 
 
 
 function Home () {
 
 
+
     let navigate = useNavigate();
 
-    const myImageString = '24.jpg'
 
     async function handleClick() {
               navigate("/contact", { replace: true });
       }
 
+     
     return (
       <>
+
       <div className="home-container">
         <section className ="vid-showcase">
         <div className="home">
-        <video src="https://drive.google.com/file/d/1wLspmIjK_QHzSZmfxoXuB_1N17JLDDhy/view" muted loop autoPlay></video>
-          <div className="overlay"></div>
+   
+          <div className={classes.NavBar}>
+          <MobileNavgation/>
+          </div>
+          <Icon/>
           <div className="text">
+            <div className="introduction">
             <Fade left delay={1000}>
             <h1>Welcome to</h1>
             </Fade>
             <Fade left delay={1400}>
             <h2>Mao Tauro <strong style={{color : 'red'}}> Productions </strong></h2>
             </Fade>
+            </div>
             <Fade left delay={2000}>
-            <p> Since beginning our journey in the digital creative field, our dedication to the work and motivation to grow has led us to exceptional projects and experiences. Take a moment to explore our services, which include a combination of collaborations, commissioned work, and side projects. Don’t hesitate to reach out if you’d like to learn more.</p>
+            <p>Take a moment to explore our services, which include a combination of collaborations, commissioned work, and side projects. Don’t hesitate to reach out if you’d like to learn more.</p>
             </Fade>
             <Fade casade delay={3000}>
             <div className="contact-me">
@@ -43,9 +54,6 @@ function Home () {
             </Fade>
           </div>
 
-          <div style={{ height: 500 }}>
-               <GlitchedImage image={myImageString} />
-           </div>
           
           <div className="social">
           <Fade clear delay={3200}>
@@ -75,6 +83,7 @@ function Home () {
             </ul>
           </div> 
           </div>
+
         </section>
       
         </div>

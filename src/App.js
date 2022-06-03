@@ -9,7 +9,8 @@ import Photos from './Photos/Photos'
 import Videos from './Videos/Videos'
 import ModalPhotos from './ModalPhotos'
 import { Routes, Route} from "react-router-dom";
-import { useState } from 'react';
+import { useState} from 'react';
+
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/gallery"  element={<Gallery/>}>
+        <Route path="/gallery"  element={<Gallery />}>
                 {/* <Route index element={<Photos />}/> */}
                 <Route path="/gallery/photos" element={<Photos  onImageClick={handleSelectedImg}  />}>
                    { selectedImg && <Route path='/gallery/photos' element={<ModalPhotos  setSelectedImg={setSelectedImg} selectedImg={selectedImg}/>} />}
@@ -38,7 +39,7 @@ function App() {
         <Route path="photos" element={<Photos />} />
         <Route path="services" element={<Services />}/>
         <Route path="contact" element={<Contact />}/>
-        {/* <Route path="*"   element={<NoMatch/>}/> */}
+        <Route path="*"   element={<NoMatch/>}/>
       </Routes>
 
       

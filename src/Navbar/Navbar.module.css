@@ -1,0 +1,211 @@
+.background {
+    background: black
+}
+
+.navbar-container{
+  padding: 10px;
+}
+
+.NavBar{
+  
+  width: 100vw;
+  height: 120px;
+  /* border-bottom: 1px solid rgb(183, 202, 160); */
+  padding: 0 20px;
+  justify-content: space-between;
+  
+}
+
+.NavBar nav ul {
+  display: flex;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 2.5%;
+
+  
+}
+
+.NavBar nav ul li {
+ display: inline-block;
+ margin: 1.5vw;
+}
+
+
+
+  .NavBar nav ul li a {
+    /* display: flex; */
+    font-size:1em;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    text-decoration: none;
+    background: black;
+    color: rgb(183, 202, 160);
+    margin: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    font-family: 'MuseoModerno', cursive;
+    float: right;
+  }
+
+  .NavBar  a:hover{
+    letter-spacing: 6px;
+    font-family: 'MuseoModerno', cursive;
+    color:red;
+  }
+
+  .NavBar .MobileNavigation {
+    display: none;
+  }
+
+
+ 
+
+/* Mobiles Devices */
+@media screen and (min-width: 270px) 
+and (max-width :  767px) 
+{
+  .NavBar {
+    border-bottom: none;
+   }
+   .NavBar  nav ul li  a:hover{
+    letter-spacing: 6px;
+    font-family: 'MuseoModerno', cursive;
+    color:red;
+  }
+
+    .NavBar .Navigation {
+      display: none;
+    
+    }
+
+    .NavBar .MobileNavigation {
+      display: flex;
+     
+      align-items: center;
+      
+    }
+    .NavBar .MobileNavigation .Hamburger{
+      position: absolute;
+      right: 8%;
+      top: 1.5%;
+      cursor: pointer;
+    }
+    .NavBar nav ul{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: absolute;
+     top: 80px;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background-color: black;
+     z-index: 2;
+    }
+    /* .NavBar nav ul li {
+      padding-left: 10%;
+    }
+  */
+    .NavBar a:hover{
+     letter-spacing: 6px;
+     font-family: 'MuseoModerno', cursive;
+     color:red;
+   }
+ 
+  }
+
+
+  /* Medium Devices, tables etc */
+@media screen and (min-width: 768px)
+and (max-width: 989px)
+ {
+   .NavBar {
+    border-bottom: none;
+   }
+   
+  
+  .NavBar .Navigation {
+    display: none;
+    border-bottom: none;
+  }
+
+  .NavBar .MobileNavigation {
+    display: flex;
+   
+    align-items: center;
+    
+  }
+
+  .NavBar .MobileNavigation .Hamburger{
+    position: absolute;
+    right: 8%;
+    top: 1.5%;
+    cursor: pointer;
+    z-index: 50;
+  }
+
+  .NavBar nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+   }
+
+   /* .NavBar nav ul li {
+     padding-left: 60%;
+   } */
+
+   .NavBar a:hover{
+    letter-spacing: 6px;
+    font-family: 'MuseoModerno', cursive;
+    color:red;
+  }
+
+   
+  
+  
+}
+
+/* Latops and Like sized Devices */
+@media screen and (min-width: 990px) 
+ and (max-width: 1199px)
+ {
+
+  .NavBar .Navigation {
+    display: flex;
+    float: right;
+  }
+  .NavBar .MobileNavigation {
+    display: none;
+  }
+
+ }
+
+
+/* Large Devices  */
+ @media screen and (min-width: 1200px)
+and (max-width: 2000px) {
+  .NavBar .Navigation {
+    display: flex;
+    float: right;
+  }
+  .NavBar .MobileNavigation {
+    display: none;
+  }
+
+}
+
+  
+
+
+

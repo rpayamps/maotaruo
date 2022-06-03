@@ -1,36 +1,80 @@
-.web-design-image{
 
-    max-height: 400px;
-    max-width: 100%;
-    object-fit: contain;
+.web-design .web-design-image{
+
+    width: 100%;
+    height: 100%;
+
 
 }
 
 .web-design{
-    display: flex;
-    padding-top: 75px;
-
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
 }
 
 .image-1{
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    position: relative;
+}
+
+.image-1 img {
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 1em;
     cursor: pointer;
-    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
 .image-2{
-    cursor: pointer;
-    padding: 50px;
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    position: relative;
 }
 
+.image-2 img{
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 .web-design-header{
-    padding-top: 100px;
+    padding-top: 6.25%;
     display: flex;
 
     position: relative;
     justify-content: center;
     color: rgb(231, 255, 203);
-    font-size: 3em;
+    font-size: 3rem;
     font-family: 'MuseoModerno', cursive;
 
 }
+
+
+
+
+
+@media screen and (min-width: 270px) 
+and (max-width :  750px) 
+ {
+    .web-design{
+        display: grid;
+        margin: 20px auto;
+        grid-gap: 0;
+        grid-template-columns: none ;
+    }
+ }

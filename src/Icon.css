@@ -1,0 +1,10 @@
+
+
+.camera{
+    /* z-index: 100; */
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      left: 45%;
+      top: 50%;
+  }

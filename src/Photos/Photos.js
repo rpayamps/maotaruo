@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react'
+import {React, useState} from 'react'
 // import { allImages } from '../Firebase'
 import './Photos.css'
 import { motion } from 'framer-motion'
@@ -70,7 +70,9 @@ function Photos({ onImageClick }) {
   return (
 
    <>
+     <Fade casade delay={1500}>
      <h5 className="photos-header">Photos</h5>
+     </Fade>
     <div className="photos">
         {images}
         <Outlet/>
