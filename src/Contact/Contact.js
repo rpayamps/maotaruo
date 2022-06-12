@@ -3,6 +3,8 @@ import Navbar from "../Navbar/Navbar"
 import emailjs from '@emailjs/browser';
 import './Contact.css'
 import {motion} from 'framer-motion'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Contact () {
@@ -47,6 +49,8 @@ function Contact () {
 
       
     }
+
+    const notify = () => toast.success("Your Email has been sent! Thank you for your interest.");
     
 
     return (
@@ -93,9 +97,10 @@ function Contact () {
       <textarea name="message" value={message} onChange={handleMessage} placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
     </div>
     <div class="submit">
-      <input type="submit" value="Send Message" id="form_button" />
+      <input  onClick={notify} type="submit" value="Send Message" id="form_button" />
     </div>
   </form>
+  <ToastContainer position="bottom-center" autoClose={5000} />
 </motion.div>
 </>
     )
