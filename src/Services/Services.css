@@ -13,9 +13,9 @@
     width: 100%;
     position: relative;
     justify-content: center;
-    color: rgb(231, 255, 203);
-    font-size: 3em;
-    font-family: 'MuseoModerno', cursive;
+    font-size: 3rem;
+    color: white;
+    font-family: 'Playfair Display', serif, cursive;
 }
 
 
@@ -43,12 +43,12 @@
 span{
     position: absolute;
     z-index: 100;
-    color: #111;
+    color: white;
     bottom: 8%;
     left: 8%;
     padding: 10px 30px;
-    background: rgb(183, 202, 160);
-    font-family: 'MuseoModerno', cursive;
+    background: #c49414;
+    font-family: 'Playfair Display', serif, cursive;
     font-size:2em;
     transition: 0.2s;
     cursor: pointer;
@@ -57,8 +57,8 @@ span{
 
 span:hover{
     letter-spacing: 6px;
-    background: black;
-    color:red;
+    background: none;
+    color: white;
   }
 
 

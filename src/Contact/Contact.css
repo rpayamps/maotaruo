@@ -1,5 +1,3 @@
-
-
 button {
     overflow: visible;
   }
@@ -9,7 +7,7 @@ button {
   }
   
   button, input, select, textarea {
-    color: #5A5A5A;
+    color: white;
     font: inherit;
     margin: 0;
   }
@@ -177,13 +175,13 @@ button {
   }
   
   :-ms-input-placeholder {
-      color: black;
+      color: white;
   }
   
   #form_button {
     background: none;
-    border: solid 2px #474544;
-    color: #474544;
+    border: solid 2px white;
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-family: 'Playfair Display', serif, cursive;
@@ -200,8 +198,10 @@ button {
   }
   
   #form_button:hover {
-    background: #474544;
-    color: #F2F3EB;
+    letter-spacing: 6px;
+    background: none;
+    color: white;
+    border: none;
   }
   
   @media screen and (max-width: 768px) {

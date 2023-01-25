@@ -35,7 +35,7 @@
 
   .NavBar nav ul li a {
     /* display: flex; */
-    font-size:1em;
+    font-size: 1.5em;
     padding-left: 15px;
     padding-right: 15px;
     /* padding-top: 10px; */
@@ -43,7 +43,7 @@
     text-decoration: none;
     background: #073763;
     color: white;
-    margin: 10px; 
+    margin: 30px; 
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.2s;
