@@ -1,5 +1,5 @@
 import React from "react"
-import Fade from 'react-reveal/Fade'
+import {Fade} from "react-awesome-reveal";
 import './Services.css'
 import Navbar from '../Navbar/Navbar'
 import { useNavigate } from "react-router-dom"

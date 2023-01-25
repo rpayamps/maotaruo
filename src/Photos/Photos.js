@@ -2,7 +2,7 @@ import {React, useState} from 'react'
 import './Photos.css'
 import { motion } from 'framer-motion'
 import { Outlet} from 'react-router-dom'
-import Fade from 'react-reveal/Fade';
+import {Fade} from "react-awesome-reveal";
 
 function Photos({ onImageClick }) {
     const [photos, setPhotos] = useState([

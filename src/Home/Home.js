@@ -1,7 +1,7 @@
 import React from "react"
 import './Home.css'
 import Icon from '../Icon'
-import Fade from 'react-reveal/Fade';
+import {Fade} from "react-awesome-reveal";
 import { FaLink, FaInstagram, FaLinkedinIn} from "react-icons/fa"
 import {AiOutlineMail} from "react-icons/ai"
 import {Link, useNavigate } from "react-router-dom"
