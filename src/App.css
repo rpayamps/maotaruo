@@ -1,15 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 * {
   margin: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Playfair Display', serif;
 }
 
 
 body{
-  background: black;
+  background: #073763;
  
 }
 

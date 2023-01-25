@@ -1,16 +1,10 @@
 import {React, useState} from 'react'
-// import { allImages } from '../Firebase'
 import './Photos.css'
 import { motion } from 'framer-motion'
 import { Outlet} from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 
 function Photos({ onImageClick }) {
-
-     
-
-
-
     const [photos, setPhotos] = useState([
             require("../Assests/1.jpg"),
             require("../Assests/2.jpg"),
@@ -40,19 +34,9 @@ function Photos({ onImageClick }) {
             require("../Assests/26.jpg"),
             require("../Assests/27.jpg"),
           ])
-
-
-    
-
-
-
-
     const images = photos.map((image, index) => { 
     
-    return (  
-
-               
-    
+    return (
            <div className="image-container" key={index}  
            onClick={() => onImageClick(image)} 
            >
@@ -61,14 +45,10 @@ function Photos({ onImageClick }) {
                animate={{ opacity: 1}}
                transition={{ delay: 1}}
                 />
-            </div>
-        
-        
+            </div>    
     )})
 
-
   return (
-
    <>
      <Fade casade delay={1500}>
      <h5 className="photos-header">Photos</h5>

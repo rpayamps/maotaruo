@@ -24,12 +24,10 @@ function App() {
   }
   
   return (
-
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/gallery"  element={<Gallery />}>
-                {/* <Route index element={<Photos />}/> */}
                 <Route path="/gallery/photos" element={<Photos  onImageClick={handleSelectedImg}  />}>
                    { selectedImg && <Route path='/gallery/photos' element={<ModalPhotos  setSelectedImg={setSelectedImg} selectedImg={selectedImg}/>} />}
                 </Route>
@@ -40,9 +38,7 @@ function App() {
         <Route path="services" element={<Services />}/>
         <Route path="contact" element={<Contact />}/>
         <Route path="*"   element={<NoMatch/>}/>
-      </Routes>
-
-      
+      </Routes>   
     </div>
   );
 }

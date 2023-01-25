@@ -16,10 +16,10 @@
     
     margin: 1rem;
     font-size:1rem;
-    background: rgb(183, 202, 160);
+    background: white;
     padding: 10px 30px;
     text-decoration: none;
-    color: #111;
+    color: #073763;
     margin-top: 50px; 
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -28,8 +28,8 @@
 
 .gallary-link:hover{
     letter-spacing: 6px;
-    background: black;
-    color:red;
+    background: #073763;
+    color:#c49414;
   }
 
 
