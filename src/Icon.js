@@ -4,7 +4,7 @@ import './Icon.css'
 
 
 function Icon() {
-    // Home Page Camera Pure CSS 
+    // Home Page Camera Pure CSS code located at the index.html file
   return (
       <Fade top delay={2500}>
     <div className="camera">
