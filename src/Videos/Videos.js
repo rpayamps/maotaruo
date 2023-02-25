@@ -42,8 +42,8 @@ function Videos() {
     </Fade>
 
     <Fade right delay={1500}>
-    <div className="video-container" alt="Our Footsteps Rehearsal - No Color Grade">
-    <ReactPlayer url='https://youtu.be/A2yAf0varZg'
+    <div className="video-container" alt="Our Footsteps Rehearsal">
+    <ReactPlayer url='https://youtu.be/Fh51bAHMdvg'
              ref={ref}
             onStart={onStart}
             onEnded={onEnded}
