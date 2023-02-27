@@ -62,7 +62,16 @@ and (max-width :  750px)
   .gallery .videos {
     width: 25%
   }
-  
+  .logo{
+    top:65%;
+  }
+  .text p{
+    font-size: calc(.1rem + 5vw) !important;
+  }
+
+  .text a{
+    font-size: calc(.5rem + 2vw) !important;
+  }
 }
 
 
@@ -115,7 +124,7 @@ and (max-width: 989px)
 }
 
 /* Large Devices */
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .menu {
     display: flex; 
 
@@ -126,8 +135,8 @@ and (max-width: 989px)
     width: 75%;
   }
 
-  .text p{
-    font-size: 4rem;
+  .menu a{
+    font-size: 6rem;
     max-width: 1500px;
   }
 
