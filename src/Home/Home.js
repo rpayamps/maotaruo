@@ -51,7 +51,7 @@ function Home () {
             </Fade>
             <Fade casade delay={3000}>
             <div className="contact-me">
-            <a target="_blank"  onClick={() => handleClick("/contact")}> Contact Me</a>
+            <a target="_blank" rel="noreferrer"  onClick={() => handleClick("/contact")}> Contact Me</a>
             </div>
             </Fade>
           </div>
@@ -60,10 +60,10 @@ function Home () {
           <div className="social">
           <Fade clear delay={3200}>
             <ul className="social">  
-              <li><a href="https://www.instagram.com/mnu_roy/" className="fa fa-instagram"target="_blank"><FaInstagram/></a></li>
-              <li ><a href="https://www.linkedin.com/in/manuroy/" className="fa fa-linkedin"target="_blank"><FaLinkedinIn/></a></li>
-              <li ><a href="https://www.sharegrid.com/p/manu_roy/white?type=rent&utm_source=whitelabel&utm_medium=member&utm_campaign=embed" className="fa fa-sharegrid"target="_blank"><FaLink/></a></li>
-              <li ><a href="mailto:contact@maotaruo.com" className="fa fa-email"target="_blank"><AiOutlineMail/></a></li>
+              <li><a href="https://www.instagram.com/mnu_roy/" className="fa fa-instagram"target="_blank" rel="noreferrer"><FaInstagram/></a></li>
+              <li ><a href="https://www.linkedin.com/in/manuroy/" className="fa fa-linkedin"target="_blank" rel="noreferrer"><FaLinkedinIn/></a></li>
+              <li ><a href="https://www.sharegrid.com/p/manu_roy/white?type=rent&utm_source=whitelabel&utm_medium=member&utm_campaign=embed" className="fa fa-sharegrid"target="_blank" rel="noreferrer"><FaLink/></a></li>
+              <li ><a href="mailto:contact@maotaruo.com" className="fa fa-email"target="_blank" rel="noreferrer"><AiOutlineMail/></a></li>
             </ul>
             </Fade>
           </div> 

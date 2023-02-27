@@ -37,7 +37,7 @@
 
 
   @media screen and (min-width: 270px) 
-and (max-width :  750px) 
+and (max-width: 900px) 
  {
     .gallery-nav{ 
         align-items: center;

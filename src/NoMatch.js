@@ -10,7 +10,7 @@ function NoMatch() {
      <h7 className="no-match-text"> Error No Match 404 </h7>
      </li>
      <li>
-     <img  className="gif" src="https://media0.giphy.com/media/6uGhT1O4sxpi8/giphy.gif"/> 
+     <img  className="gif" src="https://media0.giphy.com/media/6uGhT1O4sxpi8/giphy.gif" alt="page does not have accessible content"/> 
      </li>
      </ul>
     </div>
